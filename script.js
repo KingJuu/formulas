@@ -46,7 +46,7 @@ document.querySelector('#btn-enviar').addEventListener('click', function(){
     for(var i = 0; i<sin.length; i++){
 
         let calc1 = (L - sin[i]*r)**2;
-        
+
         //A
         let calcA2 = (x - cos[i]*r)**2 + heightS;
         let calcA3 = calc1 + calcA2;
@@ -63,13 +63,22 @@ document.querySelector('#btn-enviar').addEventListener('click', function(){
     }
     
     //exibir resultado
-    const result = document.querySelector('.resultado');
+    const result = document.querySelector('.exibir');
     result.innerHTML = `
     <h1>Resultados</h1>
+    <h3>(Em mm)</h3>
+    <div class='resultado'>
+        <div class='result'>
         <p>m) ${m}</p>
         <p>n) ${n}</p>
+        </div>
+        <div class='result'>
         <p>${testeA}
+        </div>
+        <div class='result'>
         <p>${testeB}
+        </div>
+    </div>
         `
         ;
     

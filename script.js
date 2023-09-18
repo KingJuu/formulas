@@ -3,22 +3,27 @@ var inputs = document.querySelectorAll('.input-var');
 
 document.querySelector('#btn-enviar').addEventListener('click', function(){
     for (input of inputs){
+        console.log('testeFor');
 
         if(input.id == 'x'){
             var x = parseFloat(input.value);
+            console.log(x);
 
         }else if(input.id == 'y'){
             var y = parseFloat(input.value);
-            
+            console.log(y);
+
         }else if(input.id == 'r'){
             var r = parseFloat(input.value);
-            
+            console.log(r);
+
         }else if(input.id == 'L'){
             var L = parseFloat(input.value);
-            
+            console.log(L);
+
         }else if(input.id == 'h'){
             var h = parseFloat(input.value);
-            
+            console.log(h);
         }
     }
 
